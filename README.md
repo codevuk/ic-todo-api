@@ -1,2 +1,3 @@
-# ic-todo-api
-IC - API Project For Todo App
+# Todo API
+
+## IC - API Project For Todo App
