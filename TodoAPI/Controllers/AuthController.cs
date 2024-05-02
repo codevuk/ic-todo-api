@@ -4,6 +4,8 @@ using TodoApp.ViewModels;
 
 namespace TodoAPI.Controllers;
 
+[ApiController]
+[Route("[controller]")]
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;

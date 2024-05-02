@@ -20,7 +20,9 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // Database Context
 builder.Services.AddDbContext<TodoDBContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite("Data source=schools.db"));
+
+// Make sure to install Microsoft.EntityFrameworkCore.Sqlite --- version 7.0.15
 
 // Custom services
 builder.Services.AddScoped<ITodoService, TodoService>();
